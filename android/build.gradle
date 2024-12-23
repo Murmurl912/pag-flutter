@@ -27,10 +27,11 @@ android {
     if (project.android.hasProperty("namespace")) {
         namespace = "com.example.flutter_pag_plugin"
     }
-    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 19
+        compileSdk 34
+        consumerProguardFiles 'proguard-rules.pro'
     }
 
     compileOptions {
